@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">assignment1-prep</string>
+    <string-array name="usertype">
+        <item>Customer</item>
+        <item>Supplier</item>
+        <item>Admin</item>
+    </string-array>
+</resources>
