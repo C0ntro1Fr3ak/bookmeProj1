@@ -14,6 +14,7 @@
         android:layout_marginEnd="18dp"
         android:text="UserName"
         android:textSize="25sp"
+
         app:layout_constraintEnd_toStartOf="@+id/txtUser"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
