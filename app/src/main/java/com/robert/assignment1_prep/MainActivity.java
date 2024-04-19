@@ -1,5 +1,6 @@
 package com.robert.assignment1_prep;
 
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -10,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
+
 
 public class MainActivity extends AppCompatActivity {
     EditText _txtUser, _txtPass;
@@ -33,12 +35,12 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
             String item= _spinType.getSelectedItem().toString();
             if(_txtUser.getText().toString().equals("admin")&& _txtPass.getText().toString().equals("admin")&& item.equals("admin")){
-                Intent intent= new Intent(MainActivity.this, adminmain.class);
-                startActivity(intent);
+                Intent intentAdmin= new Intent(MainActivity.this, adminmain.class);
+                startActivity(intentAdmin);
 
             }else if(_txtUser.getText().toString().equals("user")&& _txtPass.getText().toString().equals("user")&& item.equals("user")){
-                Intent intent= new Intent(MainActivity.this, usermain.class);
-                startActivity(intent);
+                Intent intentUser= new Intent(MainActivity.this, usermain.class);
+                startActivity(intentUser);
             }else {
                 Toast.makeText(getApplicationContext(),"Error", Toast.LENGTH_LONG).show();
                 }
