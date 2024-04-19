@@ -20,10 +20,19 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".login">
 
         </activity>
-        <activity android:name=".adminmain" />
-        <activity android:name=".usermain" />
+        <activity android:name=".adminmain">
+
+        </activity>
+        <activity android:name=".usermain">
+
+        </activity>
+
+
+
     </application>
 
 </manifest>
